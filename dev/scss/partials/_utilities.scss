@@ -1,0 +1,82 @@
+/* 9. Utility Classes.
+======================================== */
+
+// Wrapper ID and Restrict Class.
+#wrapper, .restrict {
+	margin: 0 auto;
+	max-width: 120rem;
+	width: 85%;
+	@include bpt($bpt__tablet--small) { width: 90%; }
+}
+
+// Clearfix.
+.cfx { @include clearfix(); }
+
+// Browser Uprgrade Alert.
+.browser__alert {
+	background: #C30000;
+	color: white;
+	line-height: 5rem;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 99;
+	a {
+		color: #00DF57;
+		&:hover { border-bottom: 1px dotted; }
+	}
+}
+
+// Width Classes.
+.wth--fit { max-width: 100%; }
+.wth--full { width: 100%; }
+
+// Hidden Classes.
+.hdn--none {
+	display: none !important;
+	visibility: hidden;
+}
+.hdn--visually {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: .1rem;
+	margin: -.1rem;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.hdn--invisible { visibility: hidden; }
+
+// Display Classes.
+.dis--block { display: block; }
+.dis--flex { display: flex; }
+.dis--inline { display: inline; }
+.dis--inline-block { display: inline-block; }
+.dis--none { display: none; }
+
+// Float Classes.
+.flt--left { float: left; }
+.flt--none { float: none; }
+.flt--right { float: right; }
+
+// Text Classes.
+.txt--center { text-align: center; }
+.txt--justify { text-align: justify; }
+.txt--left { text-align: left; }
+.txt--right { text-align: right; }
+.txt--bold { font-weight: bold; }
+.txt--normal { font-weight: normal; }
+.txt--italic { font-style: italic; }
+.txt--lowercase { text-transform: lowercase; }
+.txt--uppercase { text-transform: uppercase; }
+.txt--nowrap { white-space: nowrap; }
+.txt--small { font-size: $fnt--size--small; }
+.txt--xsmall { font-size: $fnt--size--xsmall; }
+.txt--large { font-size: $fnt--size--large; }
+.txt--xlarge { font-size: $fnt--size--xlarge; }
+
+// Positioning Classes.
+.pos--absolute { position: absolute; }
+.pos--fixed { position: fixed; }
+.pos--relative { position: relative; }

@@ -1,0 +1,61 @@
+/* 3. Grid.
+======================================== */
+
+// Make the class in which the grid should be nested.
+.grd, .grd__nest {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+// Calculates Grid column widths based on variable inputs.
+@for $i from $grd--column through 1 {
+	$grd__calculator: ($grd__col * $i) + ($grd--gutter * ($i - 1));
+	.grd__col--#{$i} { width: $grd__calculator; }
+	@if $grd__calculator <= 25% {
+		.grd__col--#{$i} {
+			@include bpt($grd__breakpoint--mid) {
+				width: ($grd__col * $grd--half ) + ($grd--gutter * ($grd--half - 1)) !important;
+			}
+			@include bpt($grd__breakpoint--small) { width: 100% !important; }
+		}
+	}
+}
+
+// Set base styles needed for Grid columns.
+@include selector--loop($grd--column, ".grd__col") {
+	flex: 0 0 auto;
+	padding: $grd--padding;
+	@include bpt($grd__breakpoint--mid) {
+		padding: ($grd--padding / 2);
+		width: 100%;
+	}
+}
+
+// Calculates Grid offset sizes based on variable inputs.
+@for $o from $grd--column - 1 through 1 {
+	.grd__off--#{$o} { margin-left: ($grd__col * $o) + ($grd--gutter * $o); }
+}
+
+@include selector--loop($grd--column, ".grd__off") {
+	@include bpt($grd__breakpoint--mid) { margin-left: 0 !important; }
+}
+
+// Column to clear extra columns or make a newline after the column.
+.grd__col--clear { margin-right: 100%; }
+
+// Usage:
+//
+// <div class="grd">
+//   <div class="grd__col--6"></div>
+//   <div class="grd__col--6"></div>
+//
+//   Nested:
+//   <div class="grd__col-12 grd__nest">
+//     <div class="grd__col--6"></div>
+//     <div class="grd__col--6"></div>
+//	 </div>
+//
+//   Offset:
+//   <div class="grd__col--6 grd__off--6"></div>
+// </div>

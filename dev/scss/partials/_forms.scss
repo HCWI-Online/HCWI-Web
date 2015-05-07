@@ -1,0 +1,129 @@
+/* 7. Forms.
+======================================== */
+
+// Default styles for Legend.
+legend {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 0 -1rem;
+	padding: 0 1rem;
+}
+
+// Default styles for Fieldset.
+fieldset {
+	border: 1px solid $gen__border--color;
+	margin: 0;
+	padding: 2rem;
+	p:last-child { margin: 0; }
+}
+
+// Default styles for Most Form Input types.
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="idm"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+	background-color: white;
+	border: 1px solid $gen__border--color;
+	box-shadow: none;
+	height: $gen__object--height;
+	line-height: 1;
+	padding: 0 1rem;
+	width: 100%;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="idm"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="week"],
+textarea {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}
+
+// Get rid of the outline on focus.
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="idm"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus,
+select:focus {
+	border: 1px solid $gen__border--color;
+	outline: 0;
+}
+
+// Better sizing for the Input Elements.
+input[type=date]::-webkit-inner-spin-button,
+input[type=datetime]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button,
+input[type=week]::-webkit-inner-spin-button {
+	margin: 0 0 0 .5rem;
+	padding: .7rem;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=datetime]::-webkit-calendar-picker-indicator,
+input[type=datetime-local]::-webkit-calendar-picker-indicator,
+input[type=month]::-webkit-calendar-picker-indicator,
+input[type=number]::-webkit-calendar-picker-indicator,
+input[type=week]::-webkit-calendar-picker-indicator {
+	margin: 0 0 0 .5rem;
+	padding: 1.5rem;
+}
+
+// Display Checkboxes and Radio Buttons inline.
+input[type="checkbox"],
+input[type="radio"] { display: inline; }
+
+// Set default styles for Range Input.
+input[type="range"] {
+	height: $gen__object--height;
+	width: 100%;
+}
+
+// Set default styles for Color Input.
+input[type="color"] {
+	height: $gen__object--height;
+	padding: 0 1rem;
+	width: 10rem;
+}
+
+// Set default styles for Textarea.
+textarea {
+	font-family: sans-serif;
+	line-height: $gen__object--height;
+	min-height: $gen__object--height * 2;
+	resize: vertical;
+}

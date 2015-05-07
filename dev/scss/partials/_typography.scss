@@ -1,0 +1,75 @@
+/* 2. Typography.
+======================================== */
+
+// Set the font size for the document. All rem measurements based on this.
+html { font-size: $fnt--base; }
+
+// Set default styles for all Type.
+body {
+	color: $fnt--color;
+	font-family: $fnt--family;
+	font-size: $fnt--size;
+	font-weight: $fnt--weight;
+	line-height: $fnt--height;
+}
+
+// Set default styles for the Headers.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $fnt__header--color;
+	font-family: $fnt__header--family;
+	font-weight: $fnt__header--weight;
+	margin: $fnt__header--margin;
+}
+
+// Header sizes.
+h1 { font-size: 4.0rem; line-height: 1.2; }
+h2 { font-size: 3.6rem; line-height: 1.2; }
+h3 { font-size: 3.0rem; line-height: 1.3; }
+h4 { font-size: 2.4rem; line-height: 1.3; }
+h5 { font-size: 1.8rem; line-height: 1.5; }
+h6 { font-size: 1.5rem; line-height: 1.6; }
+
+// Set the bottom margin for P.
+p { margin: 0 0 2rem; }
+
+// Get rid of underlined Links.
+a { text-decoration: none; }
+
+// Default styles for Blockquotes and nested Ps.
+blockquote {
+	border-left: .3rem solid black;
+	font-size: 1.4rem;
+	line-height: 1.2;
+	margin: 2rem;
+	padding-left: 2rem;
+	p { margin: 0 0 1rem; }
+}
+
+// Make Cite element bold.
+cite { font-weight: bold; }
+
+// Set default styles for computer and code related elements.
+code,
+kbd,
+pre,
+samp {
+	background: #ededed;
+	font-size: $fnt--size--small;
+	letter-spacing: .1rem;
+	padding: $fnt__highlight--size;
+}
+
+// Default Pre styles.
+pre {
+	display: inline-block;
+	margin: 0;
+	padding: 2rem;
+}
+
+// Set the size of the Mark element.
+mark { padding: $fnt__highlight--size; }

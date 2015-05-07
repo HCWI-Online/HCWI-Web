@@ -1,0 +1,32 @@
+/* 5. Lists.
+======================================== */
+
+// Set Definition Title to bold.
+dt { font-weight: bold; }
+
+// Better spacing for DD.
+dd {
+	margin: 0 0 2rem;
+	padding: 0 0 0 4rem;
+}
+
+// General List padding and Margin.
+dl,
+ol,
+ul {
+	margin: 2rem 0;
+	padding-left: 4rem;
+}
+
+// Set line height for all list items.
+dl dd,
+dl dt,
+ul li,
+ol li { line-height: 1.6; }
+
+// Set top and bottom space for nested Unordered and Ordered Lists.
+ul,
+ol {
+	ul,
+	ol { margin: 1rem auto; }
+}

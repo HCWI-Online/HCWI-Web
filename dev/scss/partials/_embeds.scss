@@ -1,0 +1,28 @@
+/* 4. Embeds.
+======================================== */
+
+// Make images somewhat responsive by default.
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+// Set base styles for Figures and their Captions.
+figure {
+	display: inline-block;
+	margin: 2rem;
+}
+
+figcaption {
+	font-size: $fnt--size--small;
+	text-align: center;
+}
+
+// Set Iframe borders.
+iframe { border: 1px solid $gen__border--color; }
+
+// Default Progress Bar size.
+progress {
+	height: $gen__object--height;
+	width: 100%;
+}

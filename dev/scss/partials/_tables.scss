@@ -1,0 +1,31 @@
+/* 6. Tables.
+======================================== */
+
+// Set default Table styles.
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+// Set Caption to look more like a title.
+caption {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 2.6;
+}
+
+// Align the Head and Foot with the content in the Tables.
+tfoot,
+thead { text-align: left; }
+
+// Optional alternating table row colors.
+tbody { tr:nth-child(odd) { /*background:;*/ } }
+
+// Set default sizes and spacing for tables.
+td,
+th {
+	border: 1px solid $gen__border--color;
+	font-size: 1.4rem;
+	padding: 1rem;
+}

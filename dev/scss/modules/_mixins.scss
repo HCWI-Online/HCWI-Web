@@ -1,0 +1,57 @@
+// Generate the available Break Points.
+@mixin bpt($page--width) {
+	$bpt--1: "(max-width: #{$bpt__desktop--large})";
+	$bpt--2: "(max-width: #{$bpt__desktop--small})";
+	$bpt--3: "(max-width: #{$bpt__tablet--large})";
+	$bpt--4: "(max-width: #{$bpt__tablet--small})";
+	$bpt--5: "(max-width: #{$bpt__phone--large})";
+	$bpt--6: "(max-width: #{$bpt__phone--small})";
+	@if $page--width == $bpt__desktop--large { @media #{ $bpt--1 } { @content; } }
+	@if $page--width == $bpt__desktop--small { @media #{ $bpt--2 } { @content; } }
+	@if $page--width == $bpt__tablet--large { @media #{ $bpt--3 } { @content; } }
+	@if $page--width == $bpt__tablet--small { @media #{ $bpt--4 } { @content; } }
+	@if $page--width == $bpt__phone--large { @media #{ $bpt--5 } { @content; } }
+	@if $page--width == $bpt__phone--small { @media #{ $bpt--6 } { @content; } }
+}
+// Usage: .example { @include bpt(480px) { ... } }
+
+// Selector Loop.
+@mixin selector--loop($selector--count, $selector--name) {
+	$g : '';
+	@for $i from $selector--count through 1 {
+		$g : $g + $selector--name + '--' + $i + ', ';
+	}
+	#{$g} { @content; }
+}
+// Usage: @include selector--loop(12, name) { ... }
+
+// Page Width.
+@mixin restrictor($width: $page__width, $width--max: $page__width--max) {
+	margin: 0px auto;
+	max-width: $width--max;
+	width: $width;
+	@include bpt($bpt__phone--large) { width: $width + 10%; }
+}
+// Usage: #example { @include restrictor(); }
+
+// Grid Row / Nest.
+@mixin grd() {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+@mixin nest() {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+// Usage: #example { @include grd/nest(); }
+
+// Generate the Clearfix hack in any Element.
+@mixin clearfix() {
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+	& { zoom: 1; }
+}
+// Usage: .example { @include clearfix(); }

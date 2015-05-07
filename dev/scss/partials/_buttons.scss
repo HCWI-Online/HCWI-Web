@@ -1,0 +1,23 @@
+/* 8. Buttons.
+======================================== */
+
+// Default styles for Buttons.
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: $gen__object--height;
+  padding: 0 2rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+// Get rid of the outline on focused Buttons.
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus { outline: 0; }
