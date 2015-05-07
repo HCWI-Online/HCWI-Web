@@ -72,33 +72,31 @@ At first these steps may seem intimidating and unnecessary but in reality are ve
 All steps are done using the Command Line as it is the quickest and easiest way once you are comfortable using it. You can learn the basics of the Command Line [here](http://www.computerhope.com/issues/chusedos.htm).
 
 1. Navigate to the main client directory.
-    - `cd Active Clients\Web Clients`
+	- `cd Active Clients\Web Clients`
 2. Create a new client directory and navigate into it.
-    - Create folder: `mkdir New-Client`
-    - Enter folder: `cd New-Client`
-3. Initialize a Git Repository.
-    - `git init`
-4. Copy needed files from remote Git Repository.
-    - `git clone https://github.com/HCWI-Online/HCWI-Web.git`
-5. Navigate into the new cloned folder and install Node Modules.
-    - Enter folder: `cd HCWI-Web`
-    - Install Node Modules (this may take a few minutes): `npm install`
+	- Create folder: `mkdir New-Client`
+	- Enter folder: `cd New-Client`
+3. Copy needed files from remote Git Repository.
+	- `git clone https://github.com/HCWI-Online/HCWI-Web.git`
+4. Navigate into the new cloned folder and install Node Modules.
+	- Enter folder: `cd HCWI-Web`
+	- Install Node Modules (this may take a few minutes): `npm install`
 
 After following these steps the site is ready for development. You should end up with a file structure resembling the following exapmle:
 
 ```
 Active Clients/
 └── Web Clients/
-    └── New-Client/
-        └── HCWI-Web/
-            ├── dev/
-            │   └── ...
-            ├── node_modules/
-            │   └── ...
-            ├── Gruntfile.js
-            ├── LICENSE
-            ├── package.json
-            └── README.md
+	└── New-Client/
+		└── HCWI-Web/
+			├── dev/
+			│   └── ...
+			├── node_modules/
+			│   └── ...
+			├── Gruntfile.js
+			├── LICENSE
+			├── package.json
+			└── README.md
 ```
 
 ### Working on the Project ###
@@ -110,10 +108,10 @@ The new workflow brings a ton of new capabilities and ways to streamline the dev
 Aside from that small list of things to remember development will remain largely the same as before! In order to begin developing follow the steps below. As with the 'Starting the Project' section the steps will be completed in the Command Line.
 
 1. Start by navigating to the files of the project.
-    - `cd Active Clients\Web Clients\New-Client\HCWI-Web`
+	- `cd Active Clients\Web Clients\New-Client\HCWI-Web`
 2. Initialize Grunt Watch (this makes grunt watch your files as you development and automatically compiles your SCSS into CSS).
-    - Initialize Grunt Watch: `grunt watch`
-    - Stop Grunt Watch: `ctrl + c` and answer with `y`
+	- Initialize Grunt Watch: `grunt watch`
+	- Stop Grunt Watch: `ctrl + c` and answer with `y`
 3. Develope as Usual!
 
 ### Putting the Project Live ###
@@ -130,27 +128,27 @@ And it does all of this without disturbing the main development files which allo
 To complete the project workflow and build the site follow the steps below.
 
 1. Start by navigating to the files of the project.
-    - `cd Active Clients\Web Clients\New-Client\HCWI-Web`
+	- `cd Active Clients\Web Clients\New-Client\HCWI-Web`
 2. Run the Grunt Build task (this may take a few minutes).
-    - `grunt build`
+	- `grunt build`
 
 Grunt will then run the build tasks and create a new folder called `dist/` which will be used for the live web files. Below is an example of the file structure after the build tasks are completed.
 
 ```
 Active Clients/
 └── Web Clients/
-    └── New-Client/
-        └── HCWI-Web/
-            ├── dist/
-            │   └── ...
-            ├── dev/
-            │   └── ...
-            ├── node_modules/
-            │   └── ...
-            ├── Gruntfile.js
-            ├── LICENSE
-            ├── package.json
-            └── README.md
+	└── New-Client/
+		└── HCWI-Web/
+			├── dist/
+			│   └── ...
+			├── dev/
+			│   └── ...
+			├── node_modules/
+			│   └── ...
+			├── Gruntfile.js
+			├── LICENSE
+			├── package.json
+			└── README.md
 ```
 
 After development is finished and the site is live you are free to delete only the `node_modules/` folder and all of it's contents. Which is something that should be done since it takes up a lot space and is easily reaquired which is necessary to make changes in the future.
