@@ -18,12 +18,10 @@
 This project was built to provide a basic starting point for for the process of
 building responsive, lightweight and scalable websites.
 
-This project uses [SASS](http://sass-lang.com/) and [Gruntjs](http://gruntjs.com/).
-
 Clone this Repository: `https://github.com/HCWI-Online/HCWI-Web.git`.
 
 ```
-SunsetCSS/
+HCWI-Web/
 ├── dev/
 │   ├── scss/
 │   │   ├── modules/
@@ -55,7 +53,7 @@ SunsetCSS/
 - Modified version of the [HTML5 Biolerplate](https://html5boilerplate.com/) Print Styles.
 
 #### <a name="grunt">Grunt Packages:</a> ####
-The packages are included through [Gruntjs](http://gruntjs.com/) and can be installed with `npm install`.
+These packages are automatically included in the `package.json` file through [Gruntjs](http://gruntjs.com/) and can be installed with `npm install`.
 
 - [Grunt](http://gruntjs.com/)
 - [Autoprefixer](https://www.npmjs.com/package/grunt-autoprefixer) - `grunt-autoprefixer`
@@ -70,7 +68,7 @@ The packages are included through [Gruntjs](http://gruntjs.com/) and can be inst
 
 ## <a name="tools">Tool Installation</a> ##
 
-In order to use this workflow some necessary tools need to be installed first, this only needs to be done once.
+In order to use this workflow, some necessary tools need to be installed first. This only needs to be done once.
 
 1. Install [Node.js](https://nodejs.org/) to PATH (optional checkbox during installation).
 2. Install [Ruby 2.2.2](http://rubyinstaller.org/downloads/) to PATH (optional checkbox during installation).
@@ -92,7 +90,7 @@ All steps are done using the Command Line as it is the quickest and easiest way 
     - Create folder: `mkdir New-Client`
     - Enter folder: `cd New-Client`
 3. Copy needed files from remote Git Repository.
-	- `git clone https://github.com/HCWI-Online/HCWI-Web.git`
+    - `git clone https://github.com/HCWI-Online/HCWI-Web.git`
 4. Navigate into the new cloned folder and install Node Modules.
 	- Enter folder: `cd HCWI-Web`
 	- Install Node Modules (this may take a few minutes): `npm install`
@@ -120,17 +118,17 @@ The new workflow brings a ton of new capabilities and ways to streamline the dev
 - Instead of development taking place in the `Web/` folder it will now have to be done in the `HCWI-Web/dev/` folder.
 - Instead of writing plain CSS we can now right SCSS which uses the same syntax as CSS but has some cool new features and a much smaller learning curve than the SASS syntax. This means that we will have to write our styles in the `dev/scss/` folder rather than the `css` folder now.
 
-Aside from that small list of things to remember development will remain largely the same as before! In order to begin developing follow the steps below. As with the 'Starting the Project' section the steps will be completed in the Command Line.
+Aside from that small list of things to remember development will remain largely the same as before! In order to begin developing follow the steps below. As with the '[Set-Up](#setup)' section the steps will be completed in the Command Line.
 
 1. Start by navigating to the files of the project.
 	- `cd Active Clients\Web Clients\New-Client\HCWI-Web`
-2. Initialize Grunt Watch (this makes grunt watch your files as you development and automatically compiles your SCSS into CSS).
+2. Initialize Grunt Watch (this makes grunt watch your files as you develope and automatically compiles your SCSS into CSS).
 	- Initialize Grunt Watch: `grunt watch`
-	- Stop Grunt Watch: `ctrl + c` and answer with `y`
+	- Stop Grunt Watch: `ctrl + c` and answer the prompt with `y`
 3. Develope as Usual!
 
 ### <a name="production">Production</a> ###
-This is where we see most of the benefits of all of these extra steps. Using Grunt I have created a task that builds the web files that we can use for the main live website. By build I mean it will:
+This is where we see most of the benefits of all of these extra steps. Using Grunt, I have created a task that builds the web files that we can use for the main live website. By build I mean it will:
 
 - Compile, Auto-Prefix and Compress / Minify the CSS.
 - Compress / Minify the JS.
@@ -138,7 +136,7 @@ This is where we see most of the benefits of all of these extra steps. Using Gru
 - Get rid of all of the unnecessary files and folders.
 - And place them into a seperate folder called `dist/`.
 
-And it does all of this without disturbing the main development files which allows us to come back and make quick changes in the future as well as serving as a back-up of the web files.
+It does all of this without disturbing the main development files which allows us to come back and make quick changes in the future as well as serving as a back-up of the web files.
 
 To complete the project workflow and build the site follow the steps below.
 
