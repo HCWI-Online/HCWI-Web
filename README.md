@@ -122,10 +122,10 @@ Aside from that small list of things to remember development will remain largely
 
 1. Start by navigating to the files of the project.
 	- `cd Active Clients\Web Clients\New-Client\HCWI-Web`
-2. Initialize Grunt Watch (this makes grunt watch your files as you develope and automatically compiles your SCSS into CSS).
+2. Initialize Grunt Watch (this makes grunt watch your files as you develop and automatically compiles your SCSS into CSS).
 	- Initialize Grunt Watch: `grunt watch`
 	- Stop Grunt Watch: `ctrl + c` and answer the prompt with `y`
-3. Develope as Usual!
+3. Develop as Usual!
 
 ### <a name="production">Production</a> ###
 This is where we see most of the benefits of all of these extra steps. Using Grunt, I have created a task that builds the web files that we can use for the main live website. By build I mean it will:
@@ -134,7 +134,7 @@ This is where we see most of the benefits of all of these extra steps. Using Gru
 - Compress / Minify the JS.
 - Compress all of the images (.png, .jpg, .gif, .svg).
 - Get rid of all of the unnecessary files and folders.
-- And place them into a seperate folder called `dist/`.
+- Place them into a seperate folder called `dist/`.
 
 It does all of this without disturbing the main development files which allows us to come back and make quick changes in the future as well as serving as a back-up of the web files.
 
