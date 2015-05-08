@@ -1,5 +1,18 @@
 # HCWI Online #
 
+## Table of Contents ##
+
+- About
+    - Includes from Other Projects
+        - Styles
+        - Grunt Packages
+- Installing Tools
+- Workflow
+    - Starting the Project
+    - Working on the Project
+    - Putting the Project Live
+- Resources
+
 ## About ##
 
 This project was built to provide a basic starting point for for the process of
@@ -72,7 +85,7 @@ At first these steps may seem intimidating and unnecessary but in reality are ve
 All steps are done using the Command Line as it is the quickest and easiest way once you are comfortable using it. You can learn the basics of the Command Line [here](http://www.computerhope.com/issues/chusedos.htm).
 
 1. Navigate to the main client directory.
-	- `cd Active Clients\Web Clients`
+    - `cd Active Clients\Web Clients`
 2. Create a new client directory and navigate into it.
 	- Create folder: `mkdir New-Client`
 	- Enter folder: `cd New-Client`
