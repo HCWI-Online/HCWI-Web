@@ -2,18 +2,18 @@
 
 ## Table of Contents ##
 
-- About
-    - Includes from Other Projects
-        - Styles
-        - Grunt Packages
-- Installing Tools
-- Workflow
-    - Starting the Project
-    - Working on the Project
-    - Putting the Project Live
-- Resources
+- [About](#about)
+    - [Included Projects](#includes)
+        - [Styles](#styles)
+        - [Grunt Packages](#grunt)
+- [Tool Installation](#tools)
+- [Workflow](#workflow)
+    - [Set-Up](#setup)
+    - [Development](#development)
+    - [Production](#production)
+- [Resources](#resources)
 
-## About ##
+## <a name="about">About</a> ##
 
 This project was built to provide a basic starting point for for the process of
 building responsive, lightweight and scalable websites.
@@ -43,16 +43,18 @@ SunsetCSS/
 │   │   └── main.scss
 │   └── index.html
 ├── Gruntfile.js
-└── package.json
+├── LICENSE
+├── package.json
+└── README.md
 ```
 
-### Includes from Other Projects: ###
+### <a name="includes">Included Projects:</a> ###
 
-#### Styles: ####
+#### <a name="styles">Styles:</a> ####
 - Modified SCSS version of [Normalize.css](http://necolas.github.io/normalize.css/).
 - Modified version of the [HTML5 Biolerplate](https://html5boilerplate.com/) Print Styles.
 
-#### Grunt Packages: ####
+#### <a name="grunt">Grunt Packages:</a> ####
 The packages are included through [Gruntjs](http://gruntjs.com/) and can be installed with `npm install`.
 
 - [Grunt](http://gruntjs.com/)
@@ -66,7 +68,7 @@ The packages are included through [Gruntjs](http://gruntjs.com/) and can be inst
 - [Watch](https://www.npmjs.com/package/grunt-contrib-watch) - `grunt-contrib-watch`
 - [Load Grunt Tasks](https://www.npmjs.com/package/load-grunt-tasks/) - `load-grunt-tasks`
 
-## Installing Tools ##
+## <a name="tools">Tool Installation</a> ##
 
 In order to use this workflow some necessary tools need to be installed first, this only needs to be done once.
 
@@ -77,9 +79,9 @@ In order to use this workflow some necessary tools need to be installed first, t
 5. Install [Git](http://git-scm.com/downloads) to PATH(optional checkbox during installation).
 6. Create a [GitHub](https://github.com/) account.
 
-## Workflow ##
+## <a name="workflow">Workflow</a> ##
 
-### Starting the Project ###
+### <a name="setup">Set-Up</a> ###
 At first these steps may seem intimidating and unnecessary but in reality are very simple and only take a couple minutes to complete.
 
 All steps are done using the Command Line as it is the quickest and easiest way once you are comfortable using it. You can learn the basics of the Command Line [here](http://www.computerhope.com/issues/chusedos.htm).
@@ -87,8 +89,8 @@ All steps are done using the Command Line as it is the quickest and easiest way 
 1. Navigate to the main client directory.
     - `cd Active Clients\Web Clients`
 2. Create a new client directory and navigate into it.
-	- Create folder: `mkdir New-Client`
-	- Enter folder: `cd New-Client`
+    - Create folder: `mkdir New-Client`
+    - Enter folder: `cd New-Client`
 3. Copy needed files from remote Git Repository.
 	- `git clone https://github.com/HCWI-Online/HCWI-Web.git`
 4. Navigate into the new cloned folder and install Node Modules.
@@ -112,7 +114,7 @@ Active Clients/
 			└── README.md
 ```
 
-### Working on the Project ###
+### <a name="development">Development</a> ###
 The new workflow brings a ton of new capabilities and ways to streamline the development process but also comes with a couple of things to remember.
 
 - Instead of development taking place in the `Web/` folder it will now have to be done in the `HCWI-Web/dev/` folder.
@@ -127,7 +129,7 @@ Aside from that small list of things to remember development will remain largely
 	- Stop Grunt Watch: `ctrl + c` and answer with `y`
 3. Develope as Usual!
 
-### Putting the Project Live ###
+### <a name="production">Production</a> ###
 This is where we see most of the benefits of all of these extra steps. Using Grunt I have created a task that builds the web files that we can use for the main live website. By build I mean it will:
 
 - Compile, Auto-Prefix and Compress / Minify the CSS.
@@ -166,7 +168,7 @@ Active Clients/
 
 After development is finished and the site is live you are free to delete only the `node_modules/` folder and all of it's contents. Which is something that should be done since it takes up a lot space and is easily reaquired which is necessary to make changes in the future.
 
-## Resources ##
+## <a name="resources">Resources</a> ##
 
 - [Using the Command Line](http://www.computerhope.com/issues/chusedos.htm).
 - [Node.js](https://nodejs.org/).
