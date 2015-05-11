@@ -6,6 +6,7 @@
     - [Included Projects](#includes)
         - [Styles](#styles)
         - [Grunt Packages](#grunt)
+    - [Included Library](#library)
 - [Tool Installation](#tools)
 - [Workflow](#workflow)
     - [Set-Up](#setup)
@@ -40,6 +41,8 @@ HCWI-Web/
 │   │   │   └── _print.scss
 │   │   └── main.scss
 │   └── index.html
+├── library/
+│   └── ...
 ├── Gruntfile.js
 ├── LICENSE
 ├── package.json
@@ -65,6 +68,9 @@ These packages are automatically included in the `package.json` file through [Gr
 - [Uglify](https://www.npmjs.com/package/grunt-contrib-uglify) - `grunt-contrib-uglify`
 - [Watch](https://www.npmjs.com/package/grunt-contrib-watch) - `grunt-contrib-watch`
 - [Load Grunt Tasks](https://www.npmjs.com/package/load-grunt-tasks/) - `load-grunt-tasks`
+
+### <a name="library">Included Library:</a> ###
+This repository includes a library of commonly used codes snippets and files that are used thoughout the projects.
 
 ## <a name="tools">Tool Installation</a> ##
 
@@ -103,6 +109,8 @@ Active Clients/
 	└── New-Client/
 		└── HCWI-Web/
 			├── dev/
+			│   └── ...
+			├── library/
 			│   └── ...
 			├── node_modules/
 			│   └── ...
@@ -155,6 +163,8 @@ Active Clients/
 			├── dist/
 			│   └── ...
 			├── dev/
+			│   └── ...
+			├── library/
 			│   └── ...
 			├── node_modules/
 			│   └── ...
