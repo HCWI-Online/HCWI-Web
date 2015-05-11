@@ -27,7 +27,7 @@
 
 // Page Width.
 @mixin restrictor($width: $page__width, $width--max: $page__width--max) {
-	margin: 0px auto;
+	margin: 0 auto;
 	max-width: $width--max;
 	width: $width;
 	@include bpt($bpt__phone--large) { width: $width + 10%; }
