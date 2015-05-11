@@ -42,7 +42,7 @@ HCWI-Web/
 │   │   └── main.scss
 │   └── index.html
 ├── library/
-│   └── ...
+│   └── (Continuously Updated)
 ├── Gruntfile.js
 ├── LICENSE
 ├── package.json
