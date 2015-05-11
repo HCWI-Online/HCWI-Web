@@ -5,9 +5,7 @@ jQuery(document).ready(function() {
 	jQuery(window).scroll(function() {
 		if (jQuery(this).scrollTop() > offset) {
 			jQuery('.top').fadeIn(duration);
-		} else {
-			jQuery('.top').fadeOut(duration);
-		}
+		} else { jQuery('.top').fadeOut(duration); }
 	});
 
 	jQuery('.top').click(function(event) {

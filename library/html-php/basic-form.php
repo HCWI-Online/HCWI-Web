@@ -8,7 +8,6 @@
 	<input type="hidden" name="emailsubject" id="emailsubject" value="">
 
 	<fieldset class="contact-form__fieldset">
-		<input type="text" placeholder="Company Name:" name="company-name">
 		<input type="text" placeholder="Name:" name="name">
 		<input type="tel" placeholder="Telephone:" name="telephone">
 		<input type="email" placeholder="E-Mail:" name="email">
