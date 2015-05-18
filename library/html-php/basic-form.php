@@ -7,7 +7,7 @@
 	<input type="hidden" name="description" id="description" value="">
 	<input type="hidden" name="emailsubject" id="emailsubject" value="">
 
-	<fieldset class="contact-form__fieldset">
+	<fieldset>
 		<input type="text" placeholder="Name:" name="name">
 		<input type="tel" placeholder="Telephone:" name="telephone">
 		<input type="email" placeholder="E-Mail:" name="email">

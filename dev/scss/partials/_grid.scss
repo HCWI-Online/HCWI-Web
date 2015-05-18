@@ -11,13 +11,20 @@
 // Calculates Grid column widths based on variable inputs.
 @for $i from $grd--column through 1 {
 	$grd__calculator: ($grd__col * $i) + ($grd--gutter * ($i - 1));
-	.grd__col--#{$i} { width: $grd__calculator; }
+	.grd__col--#{$i} {
+		width: $grd__calculator;
+		@include transition(all, 500ms, ease-in-out);
+	}
 	@if $grd__calculator <= 25% {
 		.grd__col--#{$i} {
 			@include bpt($grd__breakpoint--mid) {
 				width: ($grd__col * $grd--half ) + ($grd--gutter * ($grd--half - 1)) !important;
+				@include transition(all, 500ms, ease-in-out);
 			}
-			@include bpt($grd__breakpoint--small) { width: 100% !important; }
+			@include bpt($grd__breakpoint--small) {
+				width: 100% !important;
+				@include transition(all, 500ms, ease-in-out);
+			}
 		}
 	}
 }
@@ -27,18 +34,24 @@
 	flex: 0 0 auto;
 	padding: $grd--padding;
 	@include bpt($grd__breakpoint--mid) {
-		padding: ($grd--padding / 2);
+		padding: ($grd--padding / 1.2);
 		width: 100%;
 	}
 }
 
 // Calculates Grid offset sizes based on variable inputs.
 @for $o from $grd--column - 1 through 1 {
-	.grd__off--#{$o} { margin-left: ($grd__col * $o) + ($grd--gutter * $o); }
+	.grd__off--#{$o} {
+		margin-left: ($grd__col * $o) + ($grd--gutter * $o);
+		@include transition(all, 500ms, ease-in-out);
+	}
 }
 
 @include selector--loop($grd--column, ".grd__off") {
-	@include bpt($grd__breakpoint--mid) { margin-left: 0 !important; }
+	@include bpt($grd__breakpoint--mid) {
+		margin-left: 0 !important;
+		@include transition(all, 500ms, ease-in-out);
+	}
 }
 
 // Column to clear extra columns or make a newline after the column.

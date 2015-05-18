@@ -2,8 +2,8 @@
 $fnt--base            : 62.5% !default;
 $fnt--color           : black !default;
 $fnt--family          : "Helvetica Neue", Arial, sans-serif !default;
-$fnt--height          : 2 !default;
-$fnt--size            : 1.6em !default;
+$fnt--height          : 2.4rem !default;
+$fnt--size            : 1.4em !default;
 $fnt--size--small     : 85% !default;
 $fnt--size--xsmall    : 70% !default;
 $fnt--size--large     : 115% !default;
@@ -33,7 +33,10 @@ $grd--padding           : 1.5rem !default;
 $grd__col               : (100% - ($grd--gutter * ($grd--column - 1))) / $grd--column;
 
 // General.
-$page__width         : 85%;
-$page__width--max    : 1200px;
-$gen__border--color  : #c5c5c5 !default;
-$gen__object--height : 4rem !default;
+$page__width          : 85%;
+$page__width--max     : 1200px;
+$gen__border--color   : #c5c5c5 !default;
+$gen__object--height  : 4rem !default;
+$gen__trans--property : all;
+$gen__trans--time     : 500ms;
+$gen__trans--method   : ease-in-out;

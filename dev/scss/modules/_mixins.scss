@@ -30,7 +30,8 @@
 	margin: 0 auto;
 	max-width: $width--max;
 	width: $width;
-	@include bpt($bpt__phone--large) { width: $width + 10%; }
+	@include bpt($bpt__tablet--small) { width: $width + 10%; }
+	@include bpt($bpt__phone--large) { width: 100%; }
 }
 // Usage: #example { @include restrictor(); }
 
@@ -55,3 +56,9 @@
 	& { zoom: 1; }
 }
 // Usage: .example { @include clearfix(); }
+
+// Transition.
+@mixin transition($property: $gen__trans--property, $time: $gen__trans--time, $method: $gen__trans--method) {
+	transition: $property $time $method;
+}
+// Usage: .example { @include transition(); }
