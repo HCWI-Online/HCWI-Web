@@ -82,6 +82,7 @@ In order to use this workflow, some necessary tools need to be installed first. 
 4. Install Grunt through Command Line(cmd.exe) using `npm install -g grunt-cli`.
 5. Install [Git](http://git-scm.com/downloads) to PATH(optional checkbox during installation).
 6. Create a [GitHub](https://github.com/) account.
+7. (Optional) Install rimraf `npm install rimraf -g`.
 
 ## <a name="workflow">Workflow</a> ##
 
