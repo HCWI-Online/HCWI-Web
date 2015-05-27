@@ -27,10 +27,12 @@ $bpt__phone--small   : 320px !default;
 $grd__breakpoint--mid   : $bpt__tablet--small !default;
 $grd__breakpoint--small : $bpt__phone--large !default;
 $grd--column            : 12 !default;
-$grd--half              : $grd--column / 2;
 $grd--gutter            : 1% !default;
 $grd--padding           : 1.5rem !default;
 $grd__col               : (100% - ($grd--gutter * ($grd--column - 1))) / $grd--column;
+$grd--half              : $grd--column * (1 / 2);
+$grd--third             : $grd--column * (1 / 3);
+$grd--quarter           : $grd--column * (1 / 4);
 
 // General.
 $page__width          : 85%;
