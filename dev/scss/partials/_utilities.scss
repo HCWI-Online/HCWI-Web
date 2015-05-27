@@ -2,12 +2,7 @@
 ======================================== */
 
 // Wrapper ID and Restrict Class.
-#wrapper, .restrict {
-	margin: 0 auto;
-	max-width: 120rem;
-	width: 85%;
-	@include bpt($bpt__tablet--small) { width: 90%; }
-}
+#wrapper, .restrict { @include restrictor(); }
 
 // Clearfix.
 .cfx { @include clearfix(); }

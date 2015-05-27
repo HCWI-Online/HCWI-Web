@@ -21,6 +21,7 @@ module.exports = function(grunt) {
 					'**',
 					'!<%= vars.sass %>/**',
 					'!<%= vars.img %>/**',
+					'!x-*.*',
 				],
 				dest: '<%= vars.distribution %>',
 			},
