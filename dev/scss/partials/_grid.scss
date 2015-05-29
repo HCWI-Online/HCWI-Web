@@ -1,74 +1,42 @@
 /* 3. Grid.
 ======================================== */
 
-// Make the class in which the grid should be nested.
-.grd, .grd__nest {
+// Make the class in which the columns should be nested.
+.grd,
+.grd__nest {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
 // Calculates Grid column widths based on variable inputs.
-@for $i from $grd--column through 1 {
-	$grd__calculator: ($grd__col * $i) + ($grd--gutter * ($i - 1));
-	.grd__col--#{$i} {
-		width: $grd__calculator;
-		@include transition(all, 500ms, ease-in-out);
-	}
-	@if $grd__calculator <= 25% {
-		.grd__col--#{$i} {
-			@include bpt($grd__breakpoint--mid) {
-				width: ($grd__col * $grd--half ) + ($grd--gutter * ($grd--half - 1)) !important;
-				@include transition(all, 500ms, ease-in-out);
-			}
-			@include bpt($grd__breakpoint--small) {
-				width: 100% !important;
-				@include transition(all, 500ms, ease-in-out);
-			}
-		}
-	}
-}
+@for $i from $grd--column through 1 { .grd__col--#{$i} { @include grd__column--calculator($i); } }
 
-// Set base styles needed for Grid columns.
-@include selector--loop($grd--column, ".grd__col") {
+div[class*="grd__col--"] {
 	flex: 0 0 auto;
 	padding: $grd--padding;
+	@include transition(all, 500ms, ease-in-out);
 	@include bpt($grd__breakpoint--mid) {
-		padding: ($grd--padding / 1.2);
+		padding: ($grd--padding / 2);
 		width: 100%;
+		@include transition(all, 500ms, ease-in-out);
 	}
 }
 
 // Calculates Grid offset sizes based on variable inputs.
-@for $o from $grd--column - 1 through 1 {
-	.grd__off--#{$o} {
-		margin-left: ($grd__col * $o) + ($grd--gutter * $o);
-		@include transition(all, 500ms, ease-in-out);
-	}
-}
+@for $o from $grd--column - 1 through 1 { .grd__off--#{$o} { @include grd__offset--calculator($o); } }
 
-@include selector--loop($grd--column, ".grd__off") {
+div[class*="grd__off--"] {
+	@include transition(all, 500ms, ease-in-out);
 	@include bpt($grd__breakpoint--mid) {
-		margin-left: 0 !important;
+		margin-left: 0;
 		@include transition(all, 500ms, ease-in-out);
 	}
 }
 
-// Column to clear extra columns or make a newline after the column.
+// Grid utility classes.
 .grd__col--clear { margin-right: 100%; }
-
-// Usage:
-//
-// <div class="grd">
-//   <div class="grd__col--6"></div>
-//   <div class="grd__col--6"></div>
-//
-//   Nested:
-//   <div class="grd__col-12 grd__nest">
-//     <div class="grd__col--6"></div>
-//     <div class="grd__col--6"></div>
-//	 </div>
-//
-//   Offset:
-//   <div class="grd__col--6 grd__off--6"></div>
-// </div>
+.grd__col--full { width: 100%; }
+.grd__col--half { @include grd__column--calculator($grd--half); }
+.grd__col--third { @include grd__column--calculator($grd--third); }
+.grd__col--quarter { @include grd__column--calculator($grd--quarter); }

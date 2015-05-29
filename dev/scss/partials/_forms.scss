@@ -82,27 +82,6 @@ select:focus {
 	outline: 0;
 }
 
-// Better sizing for the Input Elements.
-input[type=date]::-webkit-inner-spin-button,
-input[type=datetime]::-webkit-inner-spin-button,
-input[type=datetime-local]::-webkit-inner-spin-button,
-input[type=month]::-webkit-inner-spin-button,
-input[type=number]::-webkit-inner-spin-button,
-input[type=week]::-webkit-inner-spin-button {
-	margin: 0 0 0 .5rem;
-	padding: .7rem;
-}
-
-input[type=date]::-webkit-calendar-picker-indicator,
-input[type=datetime]::-webkit-calendar-picker-indicator,
-input[type=datetime-local]::-webkit-calendar-picker-indicator,
-input[type=month]::-webkit-calendar-picker-indicator,
-input[type=number]::-webkit-calendar-picker-indicator,
-input[type=week]::-webkit-calendar-picker-indicator {
-	margin: 0 0 0 .5rem;
-	padding: 1.5rem;
-}
-
 // Display Checkboxes and Radio Buttons inline.
 input[type="checkbox"],
 input[type="radio"] { display: inline; }

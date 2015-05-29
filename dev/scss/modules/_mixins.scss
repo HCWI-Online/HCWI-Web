@@ -25,6 +25,16 @@
 }
 // Usage: @include selector--loop(12, name) { ... }
 
+// Grid Calculators.
+@mixin grd__column--calculator($column__input) {
+	width: ($grd__col * $column__input) + ($grd--gutter * ($column__input - 1));
+}
+
+@mixin grd__offset--calculator($column__input) {
+	margin-left: ($grd__col * $column__input) + ($grd--gutter * $column__input);
+}
+// Usage: @include grd__column--calculator(5);
+
 // Page Width.
 @mixin restrictor($width: $page__width, $width--max: $page__width--max) {
 	margin: 0 auto;
