@@ -12,7 +12,7 @@ legend {
 
 // Default styles for Fieldset.
 fieldset {
-	border: 1px solid $gen__border--color;
+	border: 0.1rem solid $gen__border--color;
 	margin: 0;
 	padding: 2rem;
 	p:last-child { margin: 0; }
@@ -35,7 +35,7 @@ input[type="week"],
 textarea,
 select {
 	background-color: white;
-	border: 1px solid $gen__border--color;
+	border: 0.1rem solid $gen__border--color;
 	box-shadow: none;
 	height: $gen__object--height;
 	line-height: 1;
@@ -78,7 +78,7 @@ input[type="url"]:focus,
 input[type="week"]:focus,
 textarea:focus,
 select:focus {
-	border: 1px solid $gen__border--color;
+	border: 0.1rem solid $gen__border--color;
 	outline: 0;
 }
 

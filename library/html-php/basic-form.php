@@ -7,12 +7,10 @@
 	<input type="hidden" name="description" id="description" value="">
 	<input type="hidden" name="emailsubject" id="emailsubject" value="">
 
-	<fieldset>
-		<input type="text" placeholder="Name:" name="name">
-		<input type="tel" placeholder="Telephone:" name="telephone">
-		<input type="email" placeholder="E-Mail:" name="email">
-		<textarea type="text" placeholder="Message:" name="message"></textarea>
-	</fieldset>
+	<input type="text" placeholder="Name:" name="name">
+	<input type="tel" placeholder="Telephone:" name="telephone">
+	<input type="email" placeholder="E-Mail:" name="email">
+	<textarea type="text" placeholder="Message:" name="message"></textarea>
 
 	<button type="submit">Submit</button>
 </form>

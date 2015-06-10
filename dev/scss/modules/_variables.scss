@@ -1,34 +1,34 @@
 // Typography.
-$fnt--base            : 62.5% !default;
-$fnt--color           : black !default;
-$fnt--family          : "Helvetica Neue", Arial, sans-serif !default;
-$fnt--height          : 2.4rem !default;
-$fnt--size            : 1.4em !default;
-$fnt--size--small     : 85% !default;
-$fnt--size--xsmall    : 70% !default;
-$fnt--size--large     : 115% !default;
-$fnt--size--xlarge    : 145% !default;
-$fnt--weight          : 300 !default;
-$fnt__header--color   : $fnt--color !default;
-$fnt__header--family  : $fnt--family !default;
-$fnt__header--margin  : 0 0 2rem !default;
-$fnt__header--weight  : $fnt--weight !default;
-$fnt__highlight--size : .5rem 1rem !default;
+$fnt--base            : 62.5%;
+$fnt--color           : black;
+$fnt--family          : "Helvetica Neue", Arial, sans-serif;
+$fnt--height          : 2.4rem;
+$fnt--size            : 1.4em;
+$fnt--size--small     : 85%;
+$fnt--size--xsmall    : 70%;
+$fnt--size--large     : 115%;
+$fnt--size--xlarge    : 145%;
+$fnt--weight          : 300;
+$fnt__header--color   : $fnt--color;
+$fnt__header--family  : $fnt--family;
+$fnt__header--margin  : 0 0 2rem;
+$fnt__header--weight  : $fnt--weight;
+$fnt__highlight--size : .5rem 1rem;
 
 // Breakpoints.
-$bpt__desktop--large : 1600px !default;
-$bpt__desktop--small : 1200px !default;
-$bpt__tablet--large  : 1024px !default;
-$bpt__tablet--small  : 768px !default;
-$bpt__phone--large   : 480px !default;
-$bpt__phone--small   : 320px !default;
+$bpt__desktop--large : 1600px;
+$bpt__desktop--small : 1200px;
+$bpt__tablet--large  : 1024px;
+$bpt__tablet--small  : 768px;
+$bpt__phone--large   : 480px;
+$bpt__phone--small   : 320px;
 
 // Grid.
-$grd__breakpoint--mid   : $bpt__tablet--small !default;
-$grd__breakpoint--small : $bpt__phone--large !default;
-$grd--column            : 12 !default;
-$grd--gutter            : 1% !default;
-$grd--padding           : 1.5rem !default;
+$grd__breakpoint--mid   : $bpt__tablet--small;
+$grd__breakpoint--small : $bpt__phone--large;
+$grd--column            : 12;
+$grd--gutter            : 1%;
+$grd--padding           : 1.5rem;
 $grd__col               : (100% - ($grd--gutter * ($grd--column - 1))) / $grd--column;
 $grd--half              : $grd--column * (1 / 2);
 $grd--third             : $grd--column * (1 / 3);
@@ -37,8 +37,8 @@ $grd--quarter           : $grd--column * (1 / 4);
 // General.
 $page__width          : 85%;
 $page__width--max     : 1200px;
-$gen__border--color   : #c5c5c5 !default;
-$gen__object--height  : 4rem !default;
+$gen__border--color   : #c5c5c5;
+$gen__object--height  : 4rem;
 $gen__trans--property : all;
 $gen__trans--time     : 500ms;
 $gen__trans--method   : ease-in-out;

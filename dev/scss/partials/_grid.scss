@@ -15,24 +15,16 @@
 div[class*="grd__col--"] {
 	flex: 0 0 auto;
 	padding: $grd--padding;
-	@include transition(all, 500ms, ease-in-out);
 	@include bpt($grd__breakpoint--mid) {
 		padding: ($grd--padding / 2);
 		width: 100%;
-		@include transition(all, 500ms, ease-in-out);
 	}
 }
 
 // Calculates Grid offset sizes based on variable inputs.
 @for $o from $grd--column - 1 through 1 { .grd__off--#{$o} { @include grd__offset--calculator($o); } }
 
-div[class*="grd__off--"] {
-	@include transition(all, 500ms, ease-in-out);
-	@include bpt($grd__breakpoint--mid) {
-		margin-left: 0;
-		@include transition(all, 500ms, ease-in-out);
-	}
-}
+div[class*="grd__off--"] { @include bpt($grd__breakpoint--mid) { margin-left: 0; } }
 
 // Grid utility classes.
 .grd__col--clear { margin-right: 100%; }
