@@ -6,7 +6,6 @@ html { font-size: $fnt--base; }
 
 // Set default styles for all Type.
 body {
-	color: $fnt--color;
 	font-family: $fnt--family;
 	font-size: $fnt--size;
 	font-weight: $fnt--weight;
@@ -20,7 +19,6 @@ h3,
 h4,
 h5,
 h6 {
-	color: $fnt__header--color;
 	font-family: $fnt__header--family;
 	font-weight: $fnt__header--weight;
 	margin: $fnt__header--margin;
