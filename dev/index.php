@@ -1,10 +1,7 @@
 <?php include 'includes/document-head.php'; ?>
 
 	<!-- Page Specific Settings. -->
-	<title>Put Your Title Here</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
+	<title>Title</title>
 
 	<!-- Google Site Verification. -->
 	<meta name="google-site-verification" content="">

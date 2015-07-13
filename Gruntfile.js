@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 				src: [
 					'**',
 					'!<%= vars.sass %>/**',
-					'!<%= vars.img %>/**',
+					// '!<%= vars.img %>/**',
 					'!x-*.*',
 				],
 				dest: '<%= vars.distribution %>',
@@ -118,6 +118,6 @@ module.exports = function(grunt) {
 		'autoprefixer',
 		'cssmin',
 		'uglify',
-		'imagemin',
+		// 'imagemin',
 	]);
 }
