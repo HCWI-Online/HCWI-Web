@@ -11,6 +11,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<meta name="format-detection" content="telephone=no">
 
-	<!-- Stylesheets-->
+	<!-- Stylesheets. -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="css/main.css" rel="stylesheet">
